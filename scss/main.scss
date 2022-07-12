@@ -1,13 +1,13 @@
 
 @import "variables";
-body{
-    padding: 1px;
+body {
+    padding: 0em 1em 0em 1em;
 }
 #background{
     background: red;
-    color: white;
     border-radius: 6px;
     padding: 2px;
+    color: #ddd;
 }
 
 a {
@@ -98,7 +98,7 @@ p {
 }
 #floatleft {
     float: left;
-    margin: -50.5em 0em 0em 0em;
+    margin: -51.5em 0em 0em 0em;
 }
 #floatright {
     float: right;
@@ -215,10 +215,10 @@ p {
     width: 30%;
     height: 8px;
     background: #dfdfdf;
-    margin: 30px -12em 62px 0px;
+    margin: 30px -10em 62px 0px;
     position: relative;
-    top: 12em;
-    right: 33.5em;
+    top: 22em;
+    right: 12.5em;
     border-radius: 1em;
 }
 #matn {
@@ -246,41 +246,43 @@ p {
     height: 8px;
     background: #f1024f;
     border-radius: 1em;
-    margin: -11.3em 19em 0em 0em;
+    margin: -22.9em 12.8em 0em 0em
 }
 .pain {
     width: 45%;
     height: 8px;
     background: $color;
     border-radius: 1em;
-    margin: -7em 26em 0em 0em;
+    margin: -297px 17.5em 0em 0em
 }
 .degre {
     width: 80%;
     height: 8px;
     background: $color;
     border-radius: 1em;
-    margin: -2.5em 9.5em 0em 0em;
+    margin: -227.1px 6.4em 0em 0em;
 }
 #h3 {
     position: relative;
-    bottom: 6.8em;
+    bottom: 13.3em;
     left: 1.5em;
     color: rgba(5, 22, 255, 0.938);
 }
 #hhh3 {
     position: relative;
-    bottom: 1.8em;
+    bottom: 8.2em;
     left: 1.5em;
     color: rgba(5, 22, 255, 0.938);
 }
 #hh3 {
     position: relative;
-    bottom: 4.4em;
+    bottom: 10.8em;
     left: 1.5em;
     color: rgba(5, 22, 255, 0.938);
 }
-
+.mx-auto {
+    width: 50%;
+}
 //steki meno
 .background.show {
     position: fixed;
@@ -288,10 +290,225 @@ p {
     width: 100%;
     z-index: 1;
     opacity: 1;
+    background: linear-gradient(15deg, #1baae1, #0b45e9);;
 }
 .background {
-    background: rgb(167, 13, 13);
+    background: blanchedalmond;
     padding: 28px 0px 3px 2px;
     opacity: 0.8;
     transition: all 2s;
 }
+//accordion
+.accordion {
+    width: 50%;
+    text-align: center;
+    position: relative;
+    right: 43em;
+}
+.accordion > div > span {    
+background-color: #ddd;
+    display: block;
+    cursor: pointer;
+    padding: 15px 0px;
+    border-bottom: 1px solid #ccc;
+}
+.accordion > div:first-child > span{
+    border-radius: 15px 15px 0px 0px;
+}
+.accordion > div:last-child > span{
+    border-radius: 0 0 15px 15px;
+    border-bottom: 0;
+}
+.accordion > div.show:last-child > span{
+    border-radius: 0;
+}
+.accordion > div.show:last-child > div{
+    border-radius: 0 0 15px 15px;
+    border-bottom: 1px solid #ccc;
+}
+.accordion > div > span:after {
+    content: "\002b";
+    float: right;
+}
+.accordion > div.show > span:after {
+    content: "\2212";
+}
+.accordion > div > span:hover,
+.accordion > div.show > span {
+    background-color: #bbb3b6;
+}
+.accordion > div > div {
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+    padding: 0 15px;
+}
+.accordion > div.show > div{
+    padding: 15px;
+    
+}
+//DARK MOD
+div.themes > div {
+    height: 26px;
+    width: 26px;
+    float: left;
+    margin-right: 5px;
+    cursor: pointer;
+    border: 1px solid #555;
+}
+.light{
+    background-color: #fff;
+    color: #000;
+}
+.dark{
+    background-color: #444;
+    color: #fff;
+}
+.position-right{
+    padding: 0em 44em 0em 0em;
+
+}
+//scorol-top
+.scroll {
+    background: #033d78;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    cursor: pointer;
+    opacity: 0;
+}
+.scroll.show {
+    opacity: 1;
+}
+.sec-3 {
+    padding-top: 10em;
+}
+.p-top {
+    padding-top: 12em;
+}
+.float-left {
+    float: left;
+    width: 50%;
+    padding-left: 3em;
+}
+.float-right {
+    float: right;
+    width: 50%;
+    padding-left: 4em;
+}
+#background-color {
+    box-shadow: 0em 0em 1em 0em #ddd;
+    width: 80%;
+    border-radius: 17px;
+    position: relative;
+    top: -6em;
+    right: 11.5em;
+    background-color:#6a892a ;
+    padding: 3em;
+}
+img.border-rad {
+    margin: 10px;
+    border-radius: 20px;
+}
+.space {
+    padding-top: 6em;
+}
+.p-pain {
+    position: relative;
+    left: 2em;
+}
+img.text-left-left {
+    padding: 0em 15.9em 0em 0em;
+}
+#i {
+    color: rgb(248, 85, 85);
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  .modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    height: 16%;
+}
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  #myBtn {
+    margin: 0em 80em 0em 0em;
+    padding: 5px 5px 5px 5px;
+    border-radius: 2em;
+    background-color: blue;
+    color: white;
+}
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+  @media only screen and (min-width:1200px) {
+ #span1{
+    right: 48em;
+ }
+ #span{
+    right: 48em;
+ }
+ .position-right {
+    padding: 0em 22em 0em 0em;
+}
+.img {
+    position: relative;
+    top: 0em;
+    right: 0em;
+}
+.text-alignleft {
+    margin: 17em 32em 0em 0em;
+}
+.button {
+    position: relative;
+    left: 32em;
+    bottom: 1.8em;
+}
+.pading {
+    position: relative;
+    top: 19px;
+}
+.accordion{
+    position: relative;
+    right: 18em;
+}
+#myBtn {
+    margin: 0em 33em 0em 0em;
+}
+  }
