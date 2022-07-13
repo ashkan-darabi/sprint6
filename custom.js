@@ -2,13 +2,16 @@
 //scroll top
 let background = document.querySelector(".background");
 let scroll = document.querySelector(".scroll")
+let topnav = document.querySelector(".topnav")
 window.addEventListener("scroll", e => {
     if (scrollY >= 200) {
       background.classList.add("show")
       scroll.classList.add("show")
+      topnav.classList.add("show")
     }else{
         background.classList.remove("show")
         scroll.classList.remove("show")
+        topnav.classList.remove("show")
     }
     scroll.addEventListener("click", e => {
       if(scroll.classList.contains("show")){
@@ -17,6 +20,15 @@ window.addEventListener("scroll", e => {
       }
     })
 })
+//meno hamburger
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
 //accordion
 let accordions  = document.querySelectorAll(".accordion")
 
@@ -132,26 +144,16 @@ Array.from(themes.children).forEach(theme => {
 
 
 
-// Get the modal
+// modal
 var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
 var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the button, open the modal
 btn.onclick = function() {
   modal.style.display = "block";
 }
-
-// When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
 }
-
-// When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";

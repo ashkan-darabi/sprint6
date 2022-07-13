@@ -154,6 +154,10 @@ p {
   width: 33%;
 }
 
+.ttext-left {
+  text-align: left;
+}
+
 .hh3 {
   position: relative;
   left: 23.4em;
@@ -513,26 +517,17 @@ img.text-left-left {
   color: #f85555;
 }
 
-/* The Modal (background) */
 .modal {
   display: none;
-  /* Hidden by default */
   position: fixed;
-  /* Stay in place */
   z-index: 1;
-  /* Sit on top */
   left: 0;
   top: 0;
   width: 100%;
-  /* Full width */
   height: 100%;
-  /* Full height */
   overflow: auto;
-  /* Enable scroll if needed */
   background-color: black;
-  /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4);
-  /* Black w/ opacity */
 }
 
 .modal-content {
@@ -544,7 +539,6 @@ img.text-left-left {
   height: 16%;
 }
 
-/* The Close Button */
 .close {
   color: #aaa;
   float: right;
@@ -567,23 +561,76 @@ img.text-left-left {
   cursor: pointer;
 }
 
-@media only screen and (min-width: 1200px) {
+.topnav {
+  display: none;
+  margin: 0em -1em 0em 0em;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #04AA6D;
+  color: white;
+  text-align: end;
+}
+
+.col-md-8.mx-auto {
+  border: ridge 2px;
+  border-radius: 1em;
+}
+
+@media only screen and (max-width: 1200px) {
   .background {
-    margin: 0px -14px 0px -15px;
+    margin: 0em -1em 0em -0.9em;
   }
   #span1 {
-    right: 48em;
+    right: 43em;
+    bottom: 28px;
   }
   #span {
-    right: 48em;
+    right: 43em;
+    bottom: 28px;
   }
   .position-right {
     padding: 0em 22em 0em 0em;
   }
   .img {
     position: relative;
-    top: 0em;
+    top: -1em;
     right: 0em;
+    width: 61%;
+  }
+  .float-left {
+    padding-top: 9em;
   }
   .text-alignleft {
     margin: 17em 32em 0em 0em;
@@ -593,22 +640,24 @@ img.text-left-left {
   }
   .imgg4 {
     position: relative;
-    left: -22.4em;
-    width: 28%;
+    left: -24em;
+    width: 25%;
   }
   .hh5 {
     position: relative;
-    left: -5em;
-    bottom: 21em;
+    left: -6em;
+    bottom: 20.5em;
   }
   .p4 {
     position: relative;
-    left: -5.2em;
+    left: -6.9em;
+    bottom: 36.5em;
   }
   .imgg3 {
     position: relative;
     left: -39.5em;
-    width: 28%;
+    bottom: 48.5em;
+    width: 25%;
   }
   .hh4 {
     position: relative;
@@ -621,28 +670,32 @@ img.text-left-left {
   .imgg {
     position: relative;
     left: 39.3em;
-    width: 28%;
+    width: 25%;
+    bottom: 37.6em;
   }
   .h3 {
     position: relative;
     left: 28.7em;
+    bottom: 24.3em;
   }
   .p1 {
     position: relative;
     left: 56em;
+    bottom: 43em;
   }
   .imgg2 {
     position: relative;
-    right: -23.5em;
-    width: 28%;
+    right: -21.5em;
+    width: 25%;
+    top: -20em;
   }
   .hh3 {
     position: relative;
-    left: 20em;
+    left: 19em;
   }
   .p2 {
     position: relative;
-    right: -40.7em;
+    right: -39em;
   }
   .button {
     position: relative;
@@ -661,7 +714,7 @@ img.text-left-left {
     margin: 0em 33em 0em 0em;
   }
   #imgg5 {
-    width: 32%;
+    width: 30%;
   }
   .flex {
     margin: 0em;
@@ -717,33 +770,35 @@ img.text-left-left {
     right: 13em;
   }
   .degre {
-    margin: -36.1px 6.4em 0em 0em;
+    margin: -37.1px 6.4em 0em 0em;
   }
   #hhh3 {
     position: relative;
     bottom: 1.6em;
   }
   .pain {
-    margin: -93px 17.5em 0em 0em;
+    margin: -86px 17.5em 0em 0em;
   }
   #hh3 {
     position: relative;
-    bottom: 22.5em;
+    bottom: 22.1em;
   }
   .darajeh {
-    margin: -163.3px 12.8em 0em 0em;
+    margin: -155.3px 12.8em 0em 0em;
   }
   #h3 {
     position: relative;
-    bottom: 25em;
+    bottom: 24.5em;
   }
   #h4 {
     position: relative;
     right: 12.6em;
+    bottom: 6.5em;
   }
   #var {
     position: relative;
     right: 14em;
+    top: -3.5em;
   }
   #matn {
     position: relative;
@@ -752,6 +807,220 @@ img.text-left-left {
   #headlines {
     position: relative;
     right: 0em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .topnav.show {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    margin: 0em -20em 0em 0em;
+  }
+  .topnav {
+    display: block;
+    width: 125%;
+    opacity: 1;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  section.background {
+    display: none;
+  }
+  .img {
+    width: 90%;
+  }
+  div.themes > div {
+    position: relative;
+    right: 12em;
+  }
+  .position-right {
+    padding: 0em 13em 1em 0em;
+  }
+  #myModal {
+    width: 117%;
+  }
+  .modal-content {
+    margin: 12em 11em 0em 0em;
+  }
+  #right {
+    position: relative;
+    bottom: 20em;
+    right: 10em;
+  }
+  .text-alignleft {
+    margin: 8em 25em -6em -10em;
+  }
+  button.button {
+    position: relative;
+    left: 22em;
+  }
+  .accordion {
+    position: relative;
+    right: 13em;
+    width: 61%;
+  }
+  #myBtn {
+    margin: 0em 23.9em 0em 0em;
+  }
+  .backgroundimg {
+    width: 123%;
+  }
+  #imgg5 {
+    width: 40%;
+    position: relative;
+    bottom: 37em;
+  }
+  .imgg3 {
+    position: relative;
+    left: -25.5em;
+    top: -51em;
+  }
+  .hh4 {
+    position: relative;
+    right: 8.7em;
+    bottom: 35.5em;
+  }
+  .p3 {
+    position: relative;
+    left: -7.9em;
+    bottom: 57em;
+  }
+  .imgg4 {
+    position: relative;
+    left: -8.6em;
+    top: -45em;
+  }
+  .hh5 {
+    position: relative;
+    left: 2.6em;
+    bottom: 31.5em;
+  }
+  .p4 {
+    position: relative;
+    left: 8.8em;
+    bottom: 50.5em;
+  }
+  .imgg {
+    position: relative;
+    left: 14.8em;
+    top: -28em;
+  }
+  .h3 {
+    position: relative;
+    left: 15.9em;
+    top: -20.7em;
+  }
+  .p1 {
+    position: relative;
+    left: 32em;
+    bottom: 33.6em;
+  }
+  .imgg2 {
+    position: relative;
+    right: 1.9em;
+    top: -22em;
+  }
+  .hh3 {
+    position: relative;
+    left: 5.6em;
+    bottom: 17em;
+  }
+  .p2 {
+    position: relative;
+    right: -15.7em;
+    bottom: 27.5em;
+  }
+  .png {
+    width: 47%;
+    position: relative;
+    right: 32em;
+    top: 15em;
+  }
+  .width {
+    width: 61%;
+    position: relative;
+    top: 47em;
+    right: 16em;
+  }
+  .degre {
+    margin: -35.1px 6.4em 0em 0em;
+  }
+  #matn {
+    position: relative;
+    right: 15.2em;
+  }
+  .pain {
+    margin: -81px 16.3em 0em 0em;
+  }
+  #var {
+    position: relative;
+    right: 13.4em;
+  }
+  #hh3 {
+    position: relative;
+    bottom: 3.3em;
+  }
+  .darajeh {
+    margin: -150.3px 12.3em 0em 0em;
+  }
+  #h4 {
+    position: relative;
+    right: 12em;
+    bottom: 6.6em;
+  }
+  #h3 {
+    position: relative;
+    bottom: 6.2em;
+  }
+  .flex {
+    margin: 0em 9em 0em 0em;
+  }
+  .flex4 {
+    padding: 53px 34px 53px 65px;
+  }
+  .flex3 {
+    padding: 53px 34px 53px 65px;
+  }
+  .flex2 {
+    padding: 53px 34px 53px 65px;
+  }
+  .flex1 {
+    padding: 53px 43px 53px 65px;
+  }
+  img.text-left-left {
+    width: 107%;
+  }
+  .text-left {
+    position: relative;
+    right: 9em;
+  }
+  #background-color {
+    right: 21.3em;
+    font-size: small;
+  }
+  img.border-rad {
+    width: 240%;
+  }
+  .mx-auto {
+    width: 70%;
+  }
+  .text-endd {
+    font-size: small;
+  }
+  .space {
+    font-size: small;
+    padding-top: 2em;
+    position: relative;
+    right: 10em;
+    bottom: -1em;
+  }
+  .font-size {
+    font-size: large;
+  }
+  .scroll {
+    right: -9em;
   }
 }
 /*# sourceMappingURL=main.css.map */
