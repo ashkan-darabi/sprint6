@@ -1,3 +1,4 @@
+window.alert("This site is responsive in 1200px and 768px sizes")
 //sticky meno
 //scroll top
 let background = document.querySelector(".background");
